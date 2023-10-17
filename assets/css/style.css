@@ -1,0 +1,378 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Exo', sans-serif;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    clip-path: circle(600px at right 800px);
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pic{
+    width: 150px; 
+  height: auto;
+  animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+header ul{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+}
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+    display: inline-block;
+    color: #000;
+    font-weight: 400;
+    margin-left: 60px;
+    text-decoration: none;
+
+    transition: color .1s linear;
+    position: relative;
+    align-self: flex-start;
+}
+header ul li a:hover {
+    color: #000; 
+}
+
+header ul li a::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    background-color: #000;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity .1s linear;
+}
+
+header ul li a:hover::after {
+    opacity: 1;
+}
+
+
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.textbox{
+    position: relative;
+    max-width: 700px;
+    }
+    
+.textbox h2{
+        color:#000;
+        font-size: 4em;
+        line-height: 1.4em;
+        font-weight: 500;
+    }
+    
+.textbox h2 span{
+        color: #ff4c24;
+        font-size: 1.2em;
+        font-weight: 900;
+    }
+.textbox p{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #333;
+}
+.textbox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #ff4c24;
+    border: 2px solid #ff4c24;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.textbox a:hover{
+    border: 2px solid #000;
+    background-color: #fff;
+    color: #000;
+}
+
+.picture{
+    position: relative;
+    top: 40px; left: -120px;
+    display: flex;
+    align-items:flex-end;
+}
+.imgBox{
+    width: 400px; 
+  height: auto;
+}
+.thumb{
+    position: absolute;
+    left: 30%;
+    bottom: 60px;
+    transform: translateX(-50%);
+    display: flex;
+}
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+}
+.thumb li :hover{
+    transform: translateY(-15px);
+}
+.thumb li img{
+max-width: 70px;
+}
+.sci{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sci li{
+    list-style: none;
+}
+.sci li a{
+display: inline-block;
+margin: 5px 0;
+transform: scale(0.6); 
+filter: invert(1);
+}
+.sci li img{
+    max-width: 30px; 
+    opacity: 90%; 
+}
+
+.section2{
+    align-items: center;
+}
+.section2 img{
+    width: 400px; 
+    height: auto;
+}
+
+
+.space{
+    height: 50px;
+}
+
+
+.real-ramen{
+    height: 300px; 
+  height: auto;
+}
+.product img{
+    max-width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.product{
+    display: flex;
+}
+
+.product-left, 
+.product-right {
+    max-width: 50%;
+    width: 50%;
+}
+
+.product-title {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    margin: auto;
+    margin: 10px auto 0;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+}
+
+.product-container{
+    margin: 40px 0px 40px 0px;
+
+
+}
+
+.product-button {
+    max-width: max-content;
+    border-radius: 40px;
+    margin: auto;
+    margin-bottom: 10px; 
+    padding: 8px 20px; 
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.product-button:hover{
+    border: 2px solid #000;
+    background-color: #fff;
+    color: #000;
+}
+
+.product-button-white {
+    color: white;
+}
+
+.product-button-black {
+    color: #1e3932;
+    border: 1px solid #1e3932;
+}
+.product-button-black:hover {
+    border: 2px solid #fff;
+    background-color: #f1d168;
+    color: #fff;
+}
+
+.product-description{
+    text-align: center;
+    padding: 30px 60px 30px 60px;
+    font-size: 18px;
+}
+
+.two-pic{
+    display: flex;
+    width: 100%; /* Ширина контейнера */
+}
+
+.real-ramen2 {
+    flex-basis: 50%;
+    object-fit: cover; 
+}
+.real-ramen3 {
+    flex-basis: 50%;
+    object-fit: cover; 
+}
+
+footer{
+    background: #111;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    opacity: 50%;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    opacity: 90%;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;  
+}
+.socials li{
+    margin: 0 10px;
+    transform: translateX(-50%);
+}
+.socials li a{
+    text-decoration: none;
+    filter: invert(1);
+}
+.socials li img{
+    max-width: 30px; 
+    opacity: 50%; 
+    cursor: pointer;
+}
+.socials li img:hover{
+    /* transform: translateY(-15px); */
+    opacity: 100%; 
+}
+
+.footer-bottom{
+background: #000;
+width: 100vw;
+padding: 20px 0;
+text-align: center;
+color: #fff;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+

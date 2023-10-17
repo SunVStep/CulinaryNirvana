@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">  
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Cinzel:wght@500&family=Cormorant+Garamond&family=Exo&family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+<title>Web-Project Stepanov</title>
+</head>
+
+<body>
+<section>
+    <div class="circle"></div>
+    <header>
+        <a href="#"><img class = "pic" src="C:\Users\User\Desktop\Учеба - ГУАП\Информатика\Лаба 6\Web_project_page\assets\images\images\zaysi_bez_phona.png" class="logo"> </a>
+        <ul>
+            <li><a href="#>">Menu</a></li>
+            <li><a href="#>">Rewards</a></li>
+            <li><a href="#>">Connect</a></li>
+        </ul>
+    </header>
+    <div class = "content">
+        <div class = "textbox">
+            <h2>Culinary Nirvana Awaits <br>at <span>Zenith</span></h2>
+            <p>Discover a transcendental dining experience 
+                at Zenith. Immerse yourself 
+                in the artistry of East Asian cuisine as our 
+                expert chefs craft dishes that elevate your taste 
+                buds. From delicate sushi to fiery Szechuan flavors, 
+                each bite at Zenith is a journey of gastronomic 
+                delight. Unlock a world of flavors at Zenith.</p>
+            <a class="btn" href = "#">Show menu</a>
+        </div>
+    
+        <div class="picture">
+            <img class = "imgBox" src = "assets/images/images/Ramen Poster.jpg">
+        </div>
+
+    </div>
+    <ul class="thumb">
+        <li><img class = "icon" src="../Web_project_page/assets/images/images/ramen.png" onclick="imgSlider('assets/images/images/Ramen Poster.jpg')"></li>
+        <li><img class = "icon" src="../Web_project_page/assets/images/images/noodles.png" onclick="imgSlider('assets/images/images/Noodles3.jpg')"></li>
+        <li><img class = "icon" src="../Web_project_page/assets/images/images/kimchi.png" onclick="imgSlider('assets/images/images/Korean food poster2.jpg')"></li>
+    </ul>
+    <ul class="sci">
+            <li><a href="#"><img src="../Web_project_page/assets/images/images/telegram.png"></a></li>
+            <li><a href="#"><img src="../Web_project_page/assets/images/images/facebook-app-symbol.png"></a></li>
+            <li><a href="#"><img src="../Web_project_page/assets/images/images/instagram.png"></a></li>
+    </ul>
+    </div>
+</section>
+<script type="text/JavaScript">
+    function imgSlider(anithing) {
+        document.querySelector('.imgBox').src = anithing;
+    }
+</script>
+
+
+<div class="container">
+    <div class="product-container">
+        <div class="product" style="background-color: #1e3932">
+            <div class="product-left">
+                <img class="real-ramen" src="../Web_project_page/assets/images/images/ramen_rewards.png">
+            </div>
+            <div class="product-right">
+                <div class="product-title" 
+                style="font-size: 18px;
+                margin-top: 20px;">
+                    Delight in the Flavors of Ramen: A Bowlful of Comfort and Umami Bliss.*
+                </div>
+                <div class="product-description"></div>
+                <div class="product-button product-button-white" 
+                style="margin-top: 0px;">
+                    Join Zenith Rewards</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-container">
+        <div class="product" style="background-color: #fa91aa">
+            <div class="product-right">
+                <div class="product-title" 
+                style="font-size: 48px;
+                margin-top: 20px;
+                color: #1e3932;">
+                    Summer Special: Enjoy Free Treats and Cool Refreshments!
+                </div>
+                <div class="product-description" style="color: #1e3932;">
+                    Beat the heat with our limited-time summer offer. 
+                    Indulge in delightful flavors and refreshing beverages on us.
+                </div>
+                <div class="product-button product-button-black" 
+                style="margin-top: 10px;">
+                Claim Your Treats Now!</div>
+            </div>
+            <div class="product-left">
+                <div class="two-pic">
+                    <img class="real-ramen2" style="width: 56%;" src="../Web_project_page/assets/images/images/1.jpg">
+                    <img class="real-ramen3" style="width: 44%;" src="../Web_project_page/assets/images/images/2.jpg">    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+   <footer>
+    <div class="footer-content">
+        <h3>Contact Us</h3>
+        <p>Feel free to reach out to us for any inquiries or feedback.</p>
+        <ul class="socials">
+            <li><a href="#"><img src="../Web_project_page/assets/images/images/facebook.png"></a></li>
+            <li><a href="#"><img src="../Web_project_page/assets/images/images/telegram_.png"></a></li>
+            <li><a href="#"><img src="../Web_project_page/assets/images/images/instagram.png"></a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>copyright &copy;2023 desighed by <span>Alexander Stepanov</span></p>
+    </div>
+   </footer> 
+</body> 
+</html>  
